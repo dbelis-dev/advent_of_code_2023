@@ -105,7 +105,7 @@ def evaluate_hand(hand, bid):
         ## process
         for i in range(len(arr)-1):
             rec = arr[i]
-            ## Check each character in the hand, either swap
+            ## Check each character in the hand, and swap if smaller strength
             for idx in range(len(hand)):
                 if strengths.find(hand[idx]) == strengths.find(rec[0][idx]):
                     continue
